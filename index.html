@@ -13,6 +13,7 @@
 </head>
 
 <body>
+    <div class="back"></div>
     <div class="container">
         <header>
             <h1>COLLIN</h1>
@@ -45,16 +46,28 @@
                 <div class="skills">
                     <h2>SKILLS</h2>
                     <div class="html">
-                        <h4>HTML</h4>
+                        <h4 class="skill">HTML</h4>
+                        <div class="progress">
+                            <div class="p h"></div>
+                        </div>
                     </div>
                     <div class="css">
-                        <h4>CSS</h4>
+                        <h4 class="skill">CSS</h4>
+                        <div class="progress">
+                            <div class="p c"></div>
+                        </div>
                     </div>
                     <div class="scss">
-                        <h4>SCSS</h4>
+                        <h4 class="skill">SCSS</h4>
+                        <div class="progress">
+                            <div class="p s"></div>
+                        </div>
                     </div>
                     <div class="javascript">
-                        <h4>JAVASCRIPT</h4>
+                        <h4 class="skill">JAVASCRIPT</h4>
+                        <div class="progress">
+                            <div class="p j"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -69,16 +82,15 @@
                 <div class="social">
                     <h2>SOCIAL</h2>
                     <div class="items">
-                        <div class="facebook">
-                            <i class="fab fa-facebook-square">
-                                <p>facebook.com</p>
-                            </i>
+                        <div class="facebook item">
+                            <i class="fab fa-facebook-square"></i>
+                            <p>facebook.com</p>
                         </div>
-                        <div class="twitter">
+                        <div class="twitter item">
                             <i class="fab fa-twitter-square"></i>
                             <p>@twitter</p>
                         </div>
-                        <div class="linkedin">
+                        <div class="linkedin item">
                             <i class="fab fa-linkedin"></i>
                             <p>linkedin.com</p>
                         </div>
@@ -88,20 +100,24 @@
                     <h2>Education</h2>
                     <div class="hs edu">
                         <p>2018 - Present</p>
-                        <p>High School Diploma</p>
-                        <p>Mountain View High School</p>
+                        <div class="info">
+                            <h3>High School Diploma</h3>
+                            <h4>Mountain View High School</h4>
+                        </div>
                     </div>
                     <div class="mtech edu">
                         <p>May 2021 - Present</p>
-                        <p>Web Programming and Development</p>
-                        <p>Mountainland Technical College</p>
+                        <div class="info">
+                            <h3>Web Programming and Development</h3>
+                            <h4>Mountainland Technical College</h4>
+                        </div>
                     </div>
                 </div>
                 <div class="experience">
                     <h2>Experience</h2>
                     <div class="nhs exp">
                         <p>2018 - 2020</p>
-                        <div>
+                        <div class="info">
                             <h3>Native Harvest Seed</h3>
                             <h4>Greenhouse Manager</h4>
                             <p> Oversaw cultivation of showy milkweed.
@@ -120,7 +136,7 @@
                     </div>
                     <div class="rmatv exp">
                         <p>June 2021 - Present</p>
-                        <div>
+                        <div class="info">
                             <h3>Rocky Mountain ATV/MC</h3>
                             <h4>Warehouse Worker</h4>
                             <p> Fulfilled orders.

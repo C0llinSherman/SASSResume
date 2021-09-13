@@ -8,15 +8,35 @@
     display: flex
 }
 
+$grey: #C3C3C3;
+$offwhite: #E8E8EB;
+
 body{
-    background-color: antiquewhite;
+    height: 1300px;
+    background-color: $grey;
+    .back{
+    background-color: black;
+    height: 1000px;
+    width: 2300px;
+    transform: rotate(-50deg);
+    position: absolute;
+    right: 0;
+    bottom: 125px;
+    z-index: -100;
+    }
 }
+
+
 
 .container {
     @include widthcenter(1000px);
     margin-top: 100px;
-    background-color: white;
+    background-color: $offwhite;
     overflow: hidden;
+    padding: 50px;
+    height: 1300px;
+    box-shadow:  -20px 9px 35px 19px rgba(0,0,0,0.51);
+    border-radius: 5px;
 }
 .page, .social .items, .edu, .exp{
     display: flex;
@@ -51,12 +71,65 @@ header {
         margin-top: 0;
     }
 }
+.social{
+    .item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-right: 7.5%;
+        i {
+            margin-right: 7.5%;
+        }
+    }
+}
+
+.edu{
+    display: flex;
+justify-content: space-between;
+.info {
+    width: 70%;
+}}
+
+.exp{
+    display: flex;
+    justify-content: space-between;
+    .info {
+        width: 70%;
+    }
+}
 .black {
     background-color: black;
     height: 400px;
     transform: rotate(50deg);
     position: relative;
-    bottom: 1550px;
-    left: 400px;
+    bottom: 1500px;
+    left: 385px;
     z-index: 2;
+}
+.profile p{
+    width: 75%;
+}
+
+.progress{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 15px;
+    border: 1px solid black;
+    .p{
+        background-color: black;
+        height: 15px;
+    }
+    .h {
+        width: 80%;
+    }
+    .c{
+        width: 70%;
+    }
+    .s{
+        width: 60%;
+    }
+    .j {
+        width: 20%;
+    }
 }

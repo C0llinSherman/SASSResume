@@ -61,12 +61,12 @@ h1, h2 {
 h3 {
     @extend %bold;
 }
-h4 {
+.skill {
     @extend %roboto;
 }
 p {
     @extend %sans;
 }
-.experience h4 {
+h4 {
     @extend %italics;
 }
