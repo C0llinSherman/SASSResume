@@ -1,0 +1,62 @@
+@import 'fonts';
+
+@mixin widthcenter($w) {
+    width: $w;
+    margin: auto;
+}
+@mixin flex {
+    display: flex
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+.container {
+    @include widthcenter(1000px);
+    margin-top: 100px;
+    background-color: white;
+    overflow: hidden;
+}
+.page, .social .items, .edu, .exp{
+    display: flex;
+}
+header {
+    border-bottom: 1px solid black;
+    h1 {
+        border: none;
+        font-size: 3em;
+        margin: 0;
+        padding: 0;
+    }
+    h2 {
+        @extend %subheading;
+        width: 100%;
+        border: none;
+    }
+}
+.left {
+    border-right: 1px solid black;
+    padding-right: 3%;
+}
+.right {
+    padding-left: 3%;
+    .profile, .social, .education, .experience{ 
+        border-bottom: 1px solid black;
+    }
+}
+.page {
+    margin-top: 2%;
+    .left .contact h2, .right .profile h2{
+        margin-top: 0;
+    }
+}
+.black {
+    background-color: black;
+    height: 400px;
+    transform: rotate(50deg);
+    position: relative;
+    bottom: 1550px;
+    left: 400px;
+    z-index: 2;
+}
