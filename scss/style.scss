@@ -10,12 +10,15 @@
 
 $grey: #C3C3C3;
 $offwhite: #E8E8EB;
+$black: #19171A;
+$pageshadow: -20px 9px 35px 19px rgba(0,0,0,0.51);
+$border: 1px solid $black;
 
 body{
     height: 1300px;
     background-color: $grey;
     .back{
-    background-color: black;
+    background-color: $black;
     height: 1000px;
     width: 2300px;
     transform: rotate(-50deg);
@@ -35,14 +38,14 @@ body{
     overflow: hidden;
     padding: 50px;
     height: 1300px;
-    box-shadow:  -20px 9px 35px 19px rgba(0,0,0,0.51);
+    box-shadow:  $pageshadow;
     border-radius: 5px;
 }
 .page, .social .items, .edu, .exp{
     display: flex;
 }
 header {
-    border-bottom: 1px solid black;
+    border-bottom: $border;
     h1 {
         border: none;
         font-size: 3em;
@@ -56,13 +59,13 @@ header {
     }
 }
 .left {
-    border-right: 1px solid black;
+    border-right: $border;
     padding-right: 3%;
 }
 .right {
     padding-left: 3%;
     .profile, .social, .education, .experience{ 
-        border-bottom: 1px solid black;
+        border-bottom: $border;
     }
 }
 .page {
@@ -85,10 +88,11 @@ header {
 
 .edu{
     display: flex;
-justify-content: space-between;
+    justify-content: space-between;
 .info {
     width: 70%;
-}}
+}
+}
 
 .exp{
     display: flex;
@@ -115,9 +119,9 @@ justify-content: space-between;
     margin: 0;
     width: 100%;
     height: 15px;
-    border: 1px solid black;
+    border: $border;
     .p{
-        background-color: black;
+        background-color: $black;
         height: 15px;
     }
     .h {

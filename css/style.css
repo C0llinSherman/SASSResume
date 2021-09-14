@@ -63,7 +63,7 @@ body {
   background-color: #C3C3C3;
 }
 body .back {
-  background-color: black;
+  background-color: #19171A;
   height: 1000px;
   width: 2300px;
   transform: rotate(-50deg);
@@ -90,7 +90,7 @@ body .back {
 }
 
 header {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #19171A;
 }
 header h1 {
   border: none;
@@ -104,7 +104,7 @@ header h2 {
 }
 
 .left {
-  border-right: 1px solid black;
+  border-right: 1px solid #19171A;
   padding-right: 3%;
 }
 
@@ -112,7 +112,7 @@ header h2 {
   padding-left: 3%;
 }
 .right .profile, .right .social, .right .education, .right .experience {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #19171A;
 }
 
 .page {
@@ -167,10 +167,10 @@ header h2 {
   margin: 0;
   width: 100%;
   height: 15px;
-  border: 1px solid black;
+  border: 1px solid #19171A;
 }
 .progress .p {
-  background-color: black;
+  background-color: #19171A;
   height: 15px;
 }
 .progress .h {
